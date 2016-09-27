@@ -1,0 +1,77 @@
+html, body {
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: #222222;
+  font-family: sans;
+  font-weight: 400;
+  font-size: large;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+a {
+  text-decoration: none;
+  color: currentColor; }
+
+.t:not(:target) {
+  display: none; }
+
+.t:target {
+  display: block; }
+
+header {
+  background-color: navy;
+  color: white;
+  margin: 0;
+  padding: 0 1em; }
+  header h1 {
+    font-size: x-large; }
+    header h1 a {
+      margin-right: 1em; }
+
+nav#nav {
+  overflow-y: auto; }
+  nav#nav ul {
+    margin: 0;
+    padding: 0; }
+    nav#nav ul > li {
+      list-style: none;
+      padding: 0;
+      border-bottom: lightgray 1px solid; }
+      nav#nav ul > li:last-child {
+        border-bottom: none; }
+      nav#nav ul > li a {
+        padding: 1em;
+        display: block; }
+        nav#nav ul > li a:active {
+          background-color: lightgray; }
+
+#show-nav:not(:target) nav {
+  display: none; }
+
+#show-nav:not(:target) header {
+  position: fixed;
+  left: 0;
+  right: 0; }
+
+#show-nav:target nav {
+  display: block; }
+
+#show-nav:target main {
+  height: 0; }
+
+main {
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  main div {
+    font-size: 50vw; }
+    main div#wtf {
+      font-size: 20vw; }
