@@ -1,18 +1,71 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:300,400italic,700italic,400,700)
-
-// Font Variables
-$roboto-slab: 'Roboto Slab', serif
-$open-sans: 'Open Sans', sans-serif
-
 html, body
   margin: 0
   padding: 0
 
 body
   color: #222222
-  font-family: $open-sans
+  font-family: sans
   font-weight: 400
   font-size: large
+  display: flex
+  flex-direction: column
 
-.padding
-  padding: 10px 15px
+a
+  text-decoration: none
+  color: currentColor
+
+.t
+  &:not(:target)
+    display: none
+  &:target
+    display: block
+
+header
+  background-color: navy
+  color: white
+  margin: 0
+  padding: 0 1em
+  h1
+    font-size: x-large
+    a
+      margin-right: 1em
+
+nav#nav
+  overflow-y: auto
+  ul
+    margin: 0
+    padding: 0
+    &>li
+      list-style: none
+      padding: 0
+      border-bottom: lightgray 1px solid
+      &:last-child
+        border-bottom: none
+      a
+        padding: 1em
+        display: block
+        &:active
+          background-color: lightgray
+#show-nav
+  &:not(:target)
+    nav
+      display: none
+    header
+      position: fixed
+      left: 0
+      right: 0
+  &:target
+    nav
+      display: block
+    main
+      height: 0
+
+main
+  display: flex
+  height: 100vh
+  align-items: center
+  justify-content: center
+  div
+    font-size: 50vw
+    &#wtf
+      font-size: 20vw
