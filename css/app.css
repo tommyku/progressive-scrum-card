@@ -26,7 +26,8 @@ header {
   background-color: navy;
   color: white;
   margin: 0;
-  padding: 0 1em; }
+  padding: 0 1em;
+  border-bottom: 1px solid mediumblue; }
   header h1 {
     font-size: x-large; }
     header h1 a {
@@ -70,7 +71,9 @@ main {
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  background-color: dodgerblue;
+  color: white; }
   main div {
     font-size: 50vw; }
     main div#wtf {
