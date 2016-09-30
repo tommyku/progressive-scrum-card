@@ -21,6 +21,8 @@ a {
 
 .t:target {
   display: block; }
+  .t:target ~ .default {
+    display: none; }
 
 header {
   background-color: navy;
@@ -63,6 +65,8 @@ nav#nav {
 
 #show-nav:target main {
   height: 0; }
+  #show-nav:target main .default {
+    display: none; }
 
 main {
   display: -ms-flexbox;
@@ -75,6 +79,9 @@ main {
   background-color: dodgerblue;
   color: white; }
   main div {
-    font-size: 50vw; }
+    font-size: 50vw;
+    text-shadow: 1px 2px 2px darkblue; }
     main div#wtf {
+      font-size: 20vw; }
+    main div.default {
       font-size: 20vw; }
